@@ -12,16 +12,15 @@ Requirements & Installationguide
 - webserver with git php sqlite php-pdo support
 - clone git into webserverfolder and ensure php files can be executed
 - Example for redhat/centos 7
-
 ```
-yum install git php httpd sqlite php-pdo
+yum -y install git php httpd sqlite php-pdo
 cd /var/www/html
 git clone https://github.com/T-Systems-MMS/netdata-dashboard
-# SELINUX write permissions
 chcon -t httpd_sys_rw_content_t /var/www/html -R
+chown apache: -R /var/www/html/netdata-dashboard
+systemctl restart httpd
 ```
-
-- open browser `http://$YOURIP/dynamic/`
+- open browser `http://$YOURIP/netdata-dashboard/dynamic/`
 - by default the official netdata examples are loaded
 
 Installation Netdata:
