@@ -3,6 +3,10 @@ Netdata Dashboard!
 
 Description:
 ========
+- this project is related to you if you:
+	- have multiple servers with netdata
+	- want multiple server graphs in one dashboard
+	- want to build a custom netdata dashboard without config writing
 - "Netdata – Linux performance monitoring, done right"
 - "Looks like another faster horse." 
 [Source](https://news.ycombinator.com/item?id=11388196)
